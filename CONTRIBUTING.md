@@ -1,148 +1,74 @@
-# Contributing
+# Contribution Guidelines
 
-We'd love it if you could help make the Hacktoberfest Swag List even better. That's the spirit of open source after all!
+There are some guildelines which everyone should follow while contributing to this opensource project. While working in large teams, it is necessary to follow these steps to avoid any conflicts in the code and continue a smooth flow of collaboration amongst the developers.
 
-By opening up a pull request to add a new company offering swag or to fix something, you'll also be banking towards earning your official Hacktoberfest t-shirt!
+## Please follow these steps if you wish to contribute to the project:
 
-Check [Issues](https://github.com/crweiner/hacktoberfest-swag-list/issues) and current [Pull Requests](https://github.com/crweiner/hacktoberfest-swag-list/pulls) before contributing to avoid adding duplicates.
+1. Go through the Issues to see if, what you want is already in discussion.
 
-Please follow these rules regarding how to add a new company to the List:
+2. Open a new Issue if you do not find what you need. Describe the bug, feature request, problems, additions you might want or anything clearly in the Issue message.
 
-## Rules of Contributing
+3. Mention in the Issue that you want to work on it.
 
-If you wish to add something to the Hacktoberfest Swag List, that's great and we'd love to have you!
+4. Wait for the approval from the Maintainers of this project before starting to work on it.
 
-Please be sure to follow the simple rules:
+5. Create a pull request after making the changes and mention the Issue number that your pull request is related to.
 
-1. Be sure you are looking to add something of substance to this project, not just spam PRs. PRs must meet the [Hacktoberfest Quality Standards](https://hacktoberfest.digitalocean.com/details#quality-standards)
-2. Please be available to make changes within 48 hours when requested to do so. If you don't, then your PR may be closed.
-3. Please fix all issues flagged by the bots, including CodeClimate, GH Actions, Netlify, CircleCI or any others as soon as possible, ideally right away.
-4. If adding a new company to the swag list, follow the formatting below:
+6. Make the required changes if the reviewer asks for them. 
 
-## How to format your contribution
+7. That's it! Your pull request will be merged once everything seems okay.
 
-Make a [fork of this repo](https://github.com/crweiner/hacktoberfest-swag-list/fork) and add the details for what company and swag you find in the [Readme.md](./README.md).
+**Watch this Video if you are new to GitHub - [YouTube Link](https://youtu.be/HbSjyU2vf6Y)**
 
-We are using a very simple language called Markdown to format this list. It's basically a way to make things look pretty without having to use a rich text editor. Please familiarize yourself with Markdown [using this handy cheat sheet provided by GitHub](https://guides.github.com/pdfs/markdown-cheatsheet-online.pdf)
+## 1. Fork the Repository
 
-If you are adding a new company, be sure to add your company in two places:
+First step is to fork this repository to your GitHub account. You can do this by clicking on the Fork button provided in the top right corner of the repo page. 
 
-### A to Z Order of Companies
 
-Find the first letter of your company within the list, then add your information in the correct alphabetical order by using the following Markdown formatting:
+Also, star and watch the repository to receive all the updates directly to your mail.
 
-```markdown
-#### **Company Name**
+**How to Fork a Repository? - [YouTube Link](https://youtu.be/HbSjyU2vf6Y?t=101)**
 
-- **Swag**: (T-shirt, stickers, etc)
-- **Requirements**: (What do I have to complete? Are there different requirements per swag item? Are the PRs merged or just submitted?)
-- **How to sign up**: (Link to signup page using inline formatting of [text](URL))
-- **Issues**: Optional (link to Hacktoberfest tagged issues)
-- **Notes**: (If needed, otherwise write N/A)
-```
+## 2. Clone the forked repo to your system
 
- If you don't see a letter heading for your company, please add it! Use the Markdown formatting to do so:
+Clone the repository that you just forked into your account.
+Be careful to clone the forked repo and not the main repo as making direct changes to the main repo will result in conflict of code and lack of co-ordination as we proceed further.
 
-```markdown
-### A
-```
 
-### Least Involvement to Most Involvement
+**How to Clone a forked repo? - [YouTube Link](https://youtu.be/HbSjyU2vf6Y?t=134)**
 
-Also add your company information to the correct section for this list. So far, the involvement scale is the following:
+## 3. Add the main repo as remote upstream
 
-- Any - 1 PR
-- 1 Merged PR
-- 2 or more PRs
-- 2 or more Merged PRs
-- 5 Merged PRs
-- Top Contributors
+Now, you have the repository on your system and you are ready to make changes. But what if someone else changes the same thing that you just did?
 
-If your involvement requirements are a bit different or do not fit into this scale, feel free to create another level in the scale! Use the same Markdown formatting as a letter heading:
+To avoid any conflicts, you need to pull all the changes from the main repository. 
 
-```markdown
-### Another Involvement Level
-```
+So, after cloning the forked repository to your system, use the command `git remote add upstream https://github.com/TasnimAnas
+/
+LinkedList-Problems
+` to point to the main repository. You only need to do this once.
 
-Depending on your involvement requirements, place your company within the appropriate section.
+Now, after making any changes to your project on the system, follow these simple steps to push your work to the repository:
 
-This section of the list will follow a slightly different set of formatting in order to make the requirements more prominent:
+`git add .`
 
-```markdown
-#### **Company Name** (swag earned at this level)
+`git commit -m "Commit Message"`
 
-- **Requirements**: If the company only offers one type of swag, then state the requirements here
-  - If they offer multiple levels of swag, then record this particular swag item here as an indented bullet point
-- **Swag**: (T-shirt, stickers, etc)
-- **How to sign up**: (Link to signup page using inline formatting of [text](URL))
- **Issues**: Optional (link to Hacktoberfest tagged issues)
-- **Notes**: (If needed, otherwise write N/A)
-```
+`git pull upstream master` *This command checks for any conflicts with the main repo. Go through the conflicts and make changes, if required.*
 
-If you have multiple types of swag for different involvement levels, be sure to add two separate entries for each individual piece of swag earned! For example, Operation Code has two types of swag earned at different levels:
+`git push`
 
-#### **Operation Code**
+**How to set up a Remote Repo - [YouTube Link](https://youtu.be/-zvHQXnBO6c)**
 
-- **Requirements**:
-  - Stickers and handwritten note: Simply get a pull request merged!
-  - T-shirt: Resolve 3 issues.
+## 4. Create a pull request
 
-For each piece of swag, a separate entry was added at the appropriate involvement levels:
+After pushing the changes to your forked repository (your-username/CPP-DSA), all you have to do is create a new pull request from your account by simply clicking on the *Pull Request* button.
 
-_1. For the stickers and a handwritten note only (placed at 1 Merged PR level):_
 
-```markdown
-#### **Operation Code** (Stickers, handwritten note)
 
-- **Requirements**:
-  - Stickers and a handwritten note: Simply get a pull request merged!
-- **Swag**: T-shirt, handwritten note, stickers
-- **How to sign up**: We're tracking it manually and will comment you a Google form.
-- **Notes**: See the pinned repositories [here](https://github.com/OperationCode). You can find out more information about our all-volunteer, non-profit organization and our social media accounts via [our website](https://operationcode.org/).
-```
+> NOTE:
+> If you are some commits behind of rahulsain:master then you need to first git pull upstream master from the system, push it to your forked repository and then create the Pull Request.
 
-_2. For the T-Shirt only (placed at 2 or more Merged PRs level):_
+Give a detailed and useful explaination of what you did in the comments of pull requests and someone from the maintainers or team leads will review the code and accept the pull request or ask you to change some things before merging it.
 
-```markdown
-#### **Operation Code** (T-shirt)
-
-- **Requirements**:
-  - T-shirt: Resolve 3 issues.
-- **Swag**: T-shirt, handwritten note, stickers
-- **How to sign up**: We're tracking it manually and will comment you a Google form.
-- **Notes**: See the pinned repositories [here](https://github.com/OperationCode). You can find out more information about our all-volunteer, non-profit organization and our social media accounts via [our website](https://operationcode.org/).
-```
-
-Note that the requirements have been edited for clarity, only showing the requirements for that type of swag and moved to the first bullet point. Also, the swag type is placed in parentheses after the company name to understand what is being earned at each level. 😊
-
-## Support
-
-This little project costs ~ $20/year to run between the domain name and Netlify costs. If you want to chip in a dollar for just the month of October, I'll be very grateful! You can Sponsor the project through [GitHub here](https://github.com/sponsors/crweiner). Thank you!
-
-## Add your name
-
-Did you help contribute to the Hacktoberfest Swag list? Add your name to the list of humans.
-
-Contribution formatting will follow these guidelines in Markdown.
-
-```markdown
-- [Bob Smith](https://github.com/bobsmith)
-```
-
-If your contribution or PR is not formatted correctly, I'll let you know and give you a chance to fix it.
-
----
-
-## 2021 Contributors
-
-- [Chandler Weiner](https://github.com/crweiner/)
-
----
-
-Disclaimer: This website is a fan and community made creation. It is not affiliated with [Hacktoberfest](https://hacktoberfest.digitalocean.com/) or any company offering swag.
-
-![Presented by DigitalOcean](img/logo-hacktoberfest-full-2021.svg)
-
----
-
-If you're looking for the Swag List from 2018,  2019, or 2020 [click here](https://github.com/crweiner/hacktoberfest-swag-list/releases) for the GitHub releases, [click here](https://github.com/crweiner/hacktoberfest-swag-list/tags) for the tags, and see the [2018](https://github.com/crweiner/hacktoberfest-swag-list/tree/2018), [2019](https://github.com/crweiner/hacktoberfest-swag-list/tree/2019), and [2020](https://github.com/crweiner/hacktoberfest-swag-list/tree/2020) branches.
+**How to Create a Pull Request? - [YouTube Link](https://youtu.be/HbSjyU2vf6Y?t=297)**
