@@ -43,9 +43,7 @@ Now, you have the repository on your system and you are ready to make changes. B
 
 To avoid any conflicts, you need to pull all the changes from the main repository. 
 
-So, after cloning the forked repository to your system, use the command `git remote add upstream https://github.com/TasnimAnas
-/
-LinkedList-Problems
+So, after cloning the forked repository to your system, use the command `git remote add upstream https://github.com/TasnimAnas/LinkedList-Problems
 ` to point to the main repository. You only need to do this once.
 
 Now, after making any changes to your project on the system, follow these simple steps to push your work to the repository:
